@@ -20,3 +20,10 @@
 
 ## 三、缺点
 ### 1.你需要先进行正确的环境配置，才能使用本工具
+
+## 四、使用方法
+### 1.按照第一点配置完所有环境
+### 2.先关闭所有的浏览器，不然命令行参数不会生效
+### 3.使用【"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --proxy-server=127.0.0.1:8080 --ignore-certificate-errors】打开浏览器，并不要关闭
+### 4.使用【mitmdump -q -p 8080 -s "D:\videodown_from_mitmproxy-main\main.py"】打开mitmdump服务，等待出现（脚本初始化成功）
+### 5.在刚才打开的浏览器中访问需要下载的网页，视频播放前会拦截进行下载
